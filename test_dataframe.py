@@ -10,7 +10,7 @@ class UnitTests(unittest.TestCase):
         '''Tests that the dataframe has at least one row'''
 
         data_frame = read_weather_data()
-        self.assertFalse(data_frame.shape[0] < 1)
+        self.assertTrue(data_frame.shape[0] >= 1)
 
     def test_no_nan(self):
         '''Tests that there are no nan values'''
